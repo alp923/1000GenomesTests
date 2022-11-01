@@ -43,7 +43,7 @@ GENOME.class@Tajima.D
 GENOME.class.split <- splitting.data(GENOME.class, subsites="coding")
 GENOME.class.split  <- neutrality.stats(GENOME.class.split)
 GENOME.class.split@Tajima.D
-#analyze all non-synonymous SNPs in the coding region.
+#analyze all non-synonymous SNPs in the coding region
 GENOME.class.split  <- neutrality.stats(GENOME.class.split, subsites="nonsyn")
 F_ST.stats(GENOME.class)
 
